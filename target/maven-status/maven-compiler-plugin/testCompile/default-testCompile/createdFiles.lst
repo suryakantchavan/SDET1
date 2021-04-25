@@ -1,0 +1,6 @@
+SetpDefinations\Setup.class
+SetpDefinations\LoginSteps.class
+Runner\TestRuner.class
+Utilities\TestDataHandler.class
+com\learn\Avaynew\AppTest.class
+Utilities\ExcelHandler.class

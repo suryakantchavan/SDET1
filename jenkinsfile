@@ -1,0 +1,22 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('Build') {
+            steps {
+                echo 'Building..'
+                 git 'https://github.com/suryakantchavan/NewSurya.git'
+            }
+        }
+        stage('Test') {
+            steps {
+            bat "mvn -Dmaven.test.failure.ignore=true clean package"
+            }
+        }
+        stage('Deploy') {
+            steps {
+                echo 'Deploying....'
+            }
+        }
+    }
+}
